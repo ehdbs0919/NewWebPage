@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>첫 타이틀</title>
+  </head>
+  <body>
+    <h1 title="이건 툴팁">웹 개발 기초</h1>
+    <br />
+    <h2>웹 개발 기초</h2>
+    <h3>웹 개발 기초</h3>
+    <hr />
+    <h4>웹 개발 기초</h4>
+    <h5>웹 개발 기초</h5>
+    <h6>웹 개발 기초</h6>
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>JavaScript</p>
+
+    <p>
+      <b>진하게</b>
+      <strong>중요한</strong>
+      <em>강조</em>
+      <i>이텔릭</i>
+      <del>삭제</del>
+      <ins>추가</ins>
+      <sup>윗첨자</sup>
+      <sub>아래첨자</sub>
+      <mark>하이라이트</mark>
+    </p>
+
+    <img src="다운로드.jpg" width="150" />
+
+    <table border="1">
+      <caption>
+        표 제목
+      </caption>
+      <thead>
+        <tr>
+          <th>이름</th>
+          <th>HTML</th>
+          <th>CSS</th>
+        </tr>
+      </thead>
+      <tfoot>
+        <tr>
+          <td><img src="다운로드.jpg" width="150" /></td>
+          <td><img src="다운로드.jpg" width="150" /></td>
+          <td><img src="다운로드.jpg" width="150" /></td>
+        </tr>
+      </tfoot>
+      <tbody>
+        <td>김모강</td>
+        <td>40</td>
+        <td>30</td>
+      </tbody>
+    </table>
+
+    <ul>
+      <li><a href="https://www.youtube.com/" target="_blank">유튜브</a></li>
+    </ul>
+
+    <h3>2 개의 신문 사이트입니다.</h3>
+    <hr />
+    <iframe src="https://www.youtube.com/" frameborder="0"></iframe>
+    <iframe src="www.naver.com" frameborder="0"></iframe>
+
+    <video src="bear.mp4" controls loop></video>
+
+    <form name="fo" method="get">
+      사용자 ID : <input type="text" size="15" value="" /><br />
+      비밀번호 : <input type="password" size="15" value="" />
+      <input type="submit" value="완료" />
+
+      보고싶은것 : <input type="text" list="what" /><br />
+      <datalist id="what">
+        <option value="산"></option>
+        <option value="바다"></option>
+        <option value="도시"></option></datalist
+      ><br />
+
+      <input type="radio" name="china" value="1" />짜장면<img
+        src="jajang.png"
+      /><br />
+      <input type="radio" name="china" value="2" />짬뽕<img
+        src="jjambbong.png"
+      /><br />
+      <input type="radio" name="china" value="3" />탕수육<img
+        src="tangsuyuk.png"
+      /><br />
+
+      <input type="email" placeholder="id@host" />
+
+      <input
+        type="color"
+        value="#FFFFFF"
+        onchange="document.body.style.color=this.Value"
+      />
+    </form>
+  </body>
+</html>

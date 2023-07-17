@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      class User {
+        constructor(name, num) {
+          this.name = name;
+          this.num = num;
+          this.school = "군포e비즈니스 고등학교";
+          this.grade = "3학년";
+        }
+        print_info() {
+          document.write(
+            this.school +
+              " " +
+              this.grade +
+              " " +
+              this.name +
+              " " +
+              this.num +
+              "<br>"
+          );
+        }
+      }
+
+      class person extends User {
+        print_info() {
+          document.write(
+            "사람 : " +
+              this.school +
+              " " +
+              this.grade +
+              " " +
+              this.name +
+              " " +
+              this.num +
+              "<br>"
+          );
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 id="clock">현재 시간</h1>
+    <script>
+      let user = new person("30302", 12345678);
+      user.print_info();
+    </script>
+  </body>
+</html>

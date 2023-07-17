@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>apple</title>
+    <script>
+      function over(obj) {
+        obj.src = "img/apple.jpg";
+        obj.width = "300";
+      }
+      function out(obj) {
+        obj.src = "img/banana.jpg";
+        obj.width = "300";
+      }
+    </script>
+  </head>
+  <body>
+    <a href="javascript:alert('클릭')">클릭해보세요</a>
+    <hr />
+    <img src="img/apple.jpg" onmouseover="over(this)" onmouseout="out(this)" />
+  </body>
+</html>

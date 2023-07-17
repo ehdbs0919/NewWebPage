@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Date</title>
+  </head>
+  <body>
+    <h3>페이지 방문 초시간이 짝수이면 violet, 홀수이면 lightskyblue 배경</h3>
+    <h1 id="clock">현재 시간</h1>
+    <hr />
+    <script>
+      function getTime() {
+        let current = new Date();
+        if (current.getSeconds() % 2 == 0) {
+          document.body.style.backgroundColor = "violet";
+        } else {
+          document.body.style.backgroundColor = "lightskyblue";
+        }
+        hour = current.getHours();
+        minutes = current.getMinutes();
+        seconds = current.getSeconds();
+
+        clock = document.getElementById("clock");
+        clock.innerText = `${hour}:${minutes}:${seconds}`;
+      }
+      setInterval(getTime, 1000);
+    </script>
+  </body>
+</html>
